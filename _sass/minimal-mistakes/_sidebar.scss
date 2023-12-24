@@ -22,7 +22,7 @@
     opacity: 0.75;
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
-
+    
     &:hover {
       opacity: 1;
     }
@@ -37,7 +37,8 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(#{$right-sidebar-width} - 1em);
+    width: calc(#{$right-sidebar-width} - 1em);  
+    padding-right: 60px; 
   }
 
   > * {
@@ -60,9 +61,8 @@
     font-size: $type-size-6;
     line-height: 1.5;
   }
-
+  
   img {
-    width: 100%;
     
     &.emoji {
       width: 20px;
@@ -114,11 +114,11 @@
    Author profile and links
    ========================================================================== */
 
-.author__avatar {
-  display: table-cell;
+.author__avatar {  
   vertical-align: top;
-  width: 36px;
-  height: 36px;
+  display: table-cell;
+  width: 15px;
+  height: 15px;
 
   @include breakpoint($large) {
     display: block;
@@ -127,7 +127,7 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 80%;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -159,11 +159,12 @@
 
 .author__name {
   margin: 0;
-
+  
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+    text-align: left;
+}
 }
 .sidebar .author__name {
   font-family: $sans-serif;
@@ -176,7 +177,8 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 20px;
-  }
+    text-align: left;  
+}
 }
 
 .author__urls-wrapper {
@@ -187,7 +189,7 @@
   z-index: 10;
   position: relative;
   cursor: pointer;
-
+ 
   li:last-child {
     a {
       margin-bottom: 0;
@@ -196,6 +198,7 @@
 
   @include breakpoint($large) {
     display: block;
+    text-align: left;
   }
 
   button {
@@ -210,9 +213,10 @@
 .author__urls {
   display: none;
   position: absolute;
-  right: 0;
+  right: -30px;
   margin-top: 15px;
   padding: 10px;
+  padding-right: 40px;
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
@@ -229,6 +233,7 @@
     display: block;
     position: relative;
     margin: 0;
+    right: 0;
     padding: 0;
     border: 0;
     background: transparent;
@@ -283,10 +288,17 @@
     font-size: $type-size-5;
     text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
-    }
+   &:hover {
+      text-decoration: none;
+      font-weight: bold;
+    } 
   }
+}
+
+
+.icon_custom{
+  width: 1.2em;
+  height: 1.2em;
 }
 
 /*

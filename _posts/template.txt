@@ -1,0 +1,75 @@
+---
+layout: single
+title: Delivery - Hack The Box
+excerpt: ""
+date: 2022-04-22
+classes: wide
+header:
+  teaser: /assets/images/htb-writeup-delivery/delivery_logo.png
+  teaser_home_page: true
+  icon: /assets/images/hackthebox.webp
+categories:
+  - 
+  - 
+tags:  
+  - rules
+---
+
+## Titulos
+
+Ingles:<span class="en_rojo">E</span><span class="en_blanco">N</span><span class="en_azul">G</span>
+Español:<span class="es_rojo">E</span><span class="es_amarillo">S</span><span class="es_rojo">P</span>
+
+## DESCRIPCION
+
+## INDICE
+
+## INDICE
+
+- [Reconocimiento de puertos](#escaneo-de-puertos)
+- [Flags](#flags)
+- [Conocimientos obtenidos](#conocimientos-obtenidos)
+- [Errores](#errores)
+- [Autores y referencias](#autores-y-referencias)
+
+
+## ESCANEO DE PUERTOS
+
+Escaneamos con `nmap` los puertos abiertos en la máquina XXXX:
+
+```ruby
+
+```
+<br>
+Escaneamos al objetivo con los scripts predeterminados de nmap, apuntando a los puertos abiertos en busca de más información.
+
+```ruby
+
+```
+
+## FLAGS
+
+<h3>User.txt</h3>
+
+```bash
+```
+<h3>Root.txt</h3>
+
+```bash
+```
+## CONOCIMIENTOS OBTENIDOS
+
+De la máquina <em>XXXX</em> podemos extraer los siguientes conocimientos:
+
+
+
+## ERRORES
+
+
+## AUTORES y REFERENCIAS
+
+Autor del write up: Luis Miranda Sierra (Void4m0n) <a href="https://app.hackthebox.com/profile/1104062" target="_blank">HTB</a>. Si queréis contactarme por cualquier motivo lo podéis hacer a través 
+de <a href="https://twitter.com/Void4m0n" target="_blank">Twitter</a>.
+
+
+Autor de la máquina:  <em>XXXX</em>, muchas gracias por la creación de XXXXX aportando a la comunidad. <a href="https://app.hackthebox.com/users/2904" target="_blank">HTB</a>.
